@@ -17,7 +17,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header-wrapper">
-          <a href="index.html">
+          <a href="index.html" class="logo">
             <svg
               width="147"
               height="40"
@@ -99,7 +99,9 @@
                 8
               </p>
             </div>
-            <img src="img/Group 1.png" alt="" class="promo-image" />
+            <div class="promo-image-wrapper">
+              <img src="img/Group 1.png" alt="" class="promo-image" />
+            </div>
           </div>
         </div>
       </section>
@@ -110,75 +112,61 @@
             Нам есть, что вам <br />
             предложить!
           </h1>
-          <div class="content-all">
-            <ul class="content-wrapper">
-              <li>
-                <img
-                  src="img/phone1.png"
-                  alt="phone"
-                  class="content-wrapper-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="img/phone2.png"
-                  alt="phone"
-                  class="content-wrapper-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="img/phone3.png"
-                  alt="phone"
-                  class="content-wrapper-img"
-                />
-              </li>
-            </ul>
-            <ul class="content-wrapper1">
-              <li><div class="content-wrapper-shadow"></div></li>
-              <li><div class="content-wrapper-shadow"></div></li>
-              <li><div class="content-wrapper-shadow"></div></li>
-            </ul>
-            <ul class="content-wrapper2">
-              <li>
-                <div class="content-wrapper-background">
-                  <p>Поднимает настроение</p>
-                </div>
-              </li>
-              <li>
-                <div class="content-wrapper-background">
-                  <p>Меняет мир вокруг</p>
-                </div>
-              </li>
-              <li>
-                <div class="content-wrapper-background">
-                  <p>Заводит новых друзей</p>
-                </div>
-              </li>
-            </ul>
-            <ul class="content-wrapper3">
-              <li>
-                <p>
-                  Приложение позволит вам победить осеннюю хандру и депрессию
-                  буквально в несколько кликов!
-                </p>
-              </li>
-              <li>
-                <p>
-                  Сделайте снимок и <br />
-                  украсьте его смайликом <br />
-                  или текстовой подписью, чтобы усилить эффект
-                </p>
-              </li>
-              <li>
-                <p>
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
-                  <br />
-                  и заводите новых
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ul class="content-phone-wrapper">
+            <li>
+              <img src="img/phone1.png" alt="phone" />
+            </li>
+            <li>
+              <img src="img/phone2.png" alt="phone" />
+            </li>
+            <li>
+              <img src="img/phone3.png" alt="phone" />
+            </li>
+          </ul>
+          <ul class="content-wrapper1">
+            <li><div class="content-wrapper-shadow"></div></li>
+            <li><div class="content-wrapper-shadow"></div></li>
+            <li><div class="content-wrapper-shadow"></div></li>
+          </ul>
+          <ul class="content-wrapper2">
+            <li>
+              <div class="content-wrapper-background">
+                <p>Поднимает настроение</p>
+              </div>
+            </li>
+            <li>
+              <div class="content-wrapper-background">
+                <p>Меняет мир вокруг</p>
+              </div>
+            </li>
+            <li>
+              <div class="content-wrapper-background">
+                <p>Заводит новых друзей</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="content-wrapper3">
+            <li>
+              <p>
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li>
+              <p>
+                Сделайте снимок и <br />
+                украсьте его смайликом <br />
+                или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li>
+              <p>
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                <br />
+                и заводите новых
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="content-time">
@@ -188,9 +176,9 @@
             <div class="content-time-info">
               <p class="content-time-title">Эффект на 24 часа!</p>
               <p class="content-time-p">
-                Британские ученые провели исследования и доказали, что
-                положительный эффект от использования приложения длится целые
-                сутки!
+                Британские ученые провели исследования и доказали, <br />
+                что положительный эффект от использования приложения длится
+                целые сутки!
               </p>
               <a href="" class="content-time-a"
                 >Узнать больше об исследовании</a
@@ -199,21 +187,42 @@
           </div>
         </div>
       </section>
-      <!-- <section>
-        <img src="img/quotes.png" alt="" />
-        <div>
-          <img src="img/left arrow.png" alt="" />
-          <p>
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть
-            на привычные серые вещи! А еще я познакомился со своей будущей женой
-            в комментариях к выложенной фотографии!»
-          </p>
-          <h3>Николай Петров</h3>
-          <p>25 лет, водитель трамвая</p> -->
-      <!-- Должна быть кнопка -->
-      <!-- <img src="img/right arrow.png" alt="" />-->
-      <!-- </div>
-      </section> -->
+      <section class="comment">
+        <div class="container">
+          <img src="img/quotes.png" alt="" />
+          <div class="comment-container">
+            <button class="comment-btn prev">prev</button>
+            <button class="comment-btn next">next</button>
+            <div class="comment-wrapper comment1 active" data-id="0" id="0">
+              <p class="comment-story">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <h3 class="comment-title">Николай Петров</h3>
+              <p class="comment-info">25 лет, водитель трамвая</p>
+            </div>
+            <div class="comment-wrapper comment2" data-id="1" id="1">
+              <p class="comment-story">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <h3 class="comment-title">Gtnz Петров</h3>
+              <p class="comment-info">28 лет, водитель трамвая</p>
+            </div>
+            <div class="comment-wrapper comment3" data-id="2" id="2">
+              <p class="comment-story">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <h3 class="comment-title">Tyuoh Петров</h3>
+              <p class="comment-info">35 лет, водитель трамвая</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="table">
         <div class="container">
           <div class="table-wrapper">
@@ -221,13 +230,13 @@
               <!--Первый ряд-->
               <ul class="table-row1-wrapper">
                 <li>
-                  <div class="table-row1-design">
+                  <div class="table-row1-view">
                     <p class="table-row1-title1">БАЗА</p>
-                    <p class="table-row1-price">1,99 USD</p>
+                    <p class="table-price">1,99 USD</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row1-design">
+                  <div class="table-row1-view">
                     <div class="table-stolb2">
                       <svg
                         class="table-svg"
@@ -245,85 +254,67 @@
                       </svg>
                       <div>
                         <p class="table-row1-title2">СТАНДАРТ</p>
-                        <p class="table-row1-price">3,99 USD</p>
+                        <p class="table-price1">3,99 USD</p>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row1-design">
+                  <div class="table-row1-views">
                     <p class="table-row1-title3">АНЛИМ</p>
-                    <p class="table-row1-price">9,99 USD</p>
+                    <p class="table-price2">9,99 USD</p>
                   </div>
                 </li>
               </ul>
               <!--Второй ряд-->
               <ul class="table-row2-wrapper">
                 <li>
-                  <div class="table-row2-design">
+                  <div class="table-row2-view1">
                     <p class="table-row2-title">Розовый фильтр</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view3 table-success"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-success"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-success"></div>
                 </li>
               </ul>
               <!--Третий ряд-->
               <ul class="table-row2-wrapper">
                 <li>
-                  <div class="table-row2-design">
+                  <div class="table-row2-view">
                     <p class="table-row2-title">Смайлики</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/no.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-success"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-success"></div>
                 </li>
               </ul>
               <!--Четвертый ряд-->
               <ul class="table-row2-wrapper">
                 <li>
-                  <div class="table-row2-design">
+                  <div class="table-row2-view2">
                     <p class="table-row2-title">Комментарии</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/no.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/no.png" alt="" />
-                  </div>
+                  <div class="table-row2-view table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-design">
-                    <img src="img/yes.png" alt="" />
-                  </div>
+                  <div class="table-row2-view4 table-success"></div>
                 </li>
               </ul>
             </div>
@@ -357,17 +348,17 @@
               >
             </li>
           </ul>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20327.94258272448!2d30.481191873550426!3d50.441234346380384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef927900001%3A0xf16879825719f0f2!2sit%20co%20ua!5e0!3m2!1sru!2sua!4v1669925188866!5m2!1sru!2sua"
+              height="502"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20327.94258272448!2d30.481191873550426!3d50.441234346380384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef927900001%3A0xf16879825719f0f2!2sit%20co%20ua!5e0!3m2!1sru!2sua!4v1669925188866!5m2!1sru!2sua"
-          width="1439"
-          height="522"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
       </section>
     </main>
     <footer class="footer">
@@ -421,8 +412,9 @@
               <path
                 d="M10.7851 33.6407C10.0561 33.6355 9.35868 33.3471 8.84503 32.8384C8.33138 32.3298 8.04314 31.6421 8.04316 30.9253C8.04316 31.6438 7.75354 32.333 7.23772 32.8419C6.7219 33.3508 6.02194 33.6381 5.29114 33.6407C6.02194 33.6433 6.7219 33.9305 7.23772 34.4395C7.75354 34.9484 8.04316 35.6376 8.04316 36.356C8.04314 35.6393 8.33138 34.9516 8.84503 34.4429C9.35868 33.9343 10.0561 33.6459 10.7851 33.6407Z"
                 fill="black"
-              /></svg
-          ></a>
+              />
+            </svg>
+          </a>
           <div class="footer-wrapper-info">
             <ul class="footer-sites">
               <li>
@@ -446,5 +438,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

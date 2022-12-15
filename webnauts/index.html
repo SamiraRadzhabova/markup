@@ -112,7 +112,7 @@
             Нам есть, что вам <br />
             предложить!
           </h1>
-          <ul class="content-phone-wrapper">
+          <!-- <ul class="content-phone-wrapper">
             <li>
               <img src="img/phone1.png" alt="phone" />
             </li>
@@ -167,8 +167,45 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section>
+        </div> -->
+        <ul class="content-phone-wrapper">
+          <li>
+            <img src="img/phone1.png" alt="phone" />
+            <div class="content-wrapper-shadow"></div>
+            <div class="content-wrapper-background">
+            <p class="content-back-title">Поднимает настроение</p> 
+            </div>
+            <p class="content-phone-info">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+        </li>
+          <li>
+              <img src="img/phone2.png" alt="phone" />
+              <div class="content-wrapper-shadow"></div>
+              <div class="content-wrapper-background">
+                <p class="content-back-title">Меняет мир вокруг</p>
+              </div>
+              <p class="content-phone-info">
+                Сделайте снимок и <br />
+                украсьте его смайликом <br />
+                или текстовой подписью, чтобы усилить эффект
+              </p>
+          </li>
+          <li>
+              <img src="img/phone3.png" alt="phone" />
+              <div class="content-wrapper-shadow"></div>
+              <div class="content-wrapper-background">
+                <p class="content-back-title1">Заводит <br> новых друзей</p>
+              </div>
+              <p class="content-phone-info">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                <br />
+                и заводите новых
+              </p>
+          </li>
+        </ul>
+      </section> 
       <section class="content-time">
         <div class="container">
           <div class="content-time-wrapper">
@@ -189,10 +226,15 @@
       </section>
       <section class="comment">
         <div class="container">
-          <img src="img/quotes.png" alt="" />
-          <div class="comment-container">
-            <button class="comment-btn prev">prev</button>
-            <button class="comment-btn next">next</button>
+          <img src="img/quotes.png" class="comment-quote" alt="" />
+          <div class="comment-button">
+            <button class="comment-btn prev">
+              <img src="img/left arrow.png" alt="">
+            </button>
+            <button type="image" class="comment-btn next">
+              <img src="img/right arrow.png" alt="">
+            </button>
+          </div>
             <div class="comment-wrapper comment1 active" data-id="0" id="0">
               <p class="comment-story">
                 «Это приложение перевернуло мой мир и позволило по-новому
@@ -221,23 +263,22 @@
               <p class="comment-info">35 лет, водитель трамвая</p>
             </div>
           </div>
-        </div>
       </section>
       <section class="table">
         <div class="container">
           <div class="table-wrapper">
             <div class="table-all">
               <!--Первый ряд-->
-              <ul class="table-row1-wrapper">
+              <ul class="table-header-wrapper">
                 <li>
-                  <div class="table-row1-view">
-                    <p class="table-row1-title1">БАЗА</p>
-                    <p class="table-price">1,99 USD</p>
+                  <div class="table-header-view">
+                    <p class="table-header-title title1">БАЗА</p>
+                    <p class="table-price price1">1,99 USD</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row1-view">
-                    <div class="table-stolb2">
+                  <div class="table-header-view">
+                    <div class="table-with-hit">
                       <svg
                         class="table-svg"
                         width="74"
@@ -253,68 +294,68 @@
                         />
                       </svg>
                       <div>
-                        <p class="table-row1-title2">СТАНДАРТ</p>
-                        <p class="table-price1">3,99 USD</p>
+                        <p class="table-header-title title2">СТАНДАРТ</p>
+                        <p class="table-price price2">3,99 USD</p>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row1-views">
-                    <p class="table-row1-title3">АНЛИМ</p>
-                    <p class="table-price2">9,99 USD</p>
+                  <div class="table-header-views">
+                    <p class="table-header-title title3">АНЛИМ</p>
+                    <p class="table-price price3">9,99 USD</p>
                   </div>
                 </li>
               </ul>
               <!--Второй ряд-->
-              <ul class="table-row2-wrapper">
+              <ul class="table-option-wrapper">
                 <li>
-                  <div class="table-row2-view1">
-                    <p class="table-row2-title">Розовый фильтр</p>
+                  <div class="table-option-view view1 right">
+                    <p class="table-option-title">Розовый фильтр</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-view3 table-success"></div>
+                  <div class="table-option-view table-success right"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-success"></div>
+                  <div class="table-option-view  table-success right"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-success"></div>
+                  <div class="table-option-view view2 table-success"></div>
                 </li>
               </ul>
               <!--Третий ряд-->
-              <ul class="table-row2-wrapper">
+              <ul class="table-option-wrapper">
                 <li>
-                  <div class="table-row2-view">
-                    <p class="table-row2-title">Смайлики</p>
+                  <div class="table-option-view right">
+                    <p class="table-option-title">Смайлики</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-warning"></div>
+                  <div class="table-option-view right table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-success"></div>
+                  <div class="table-option-view right table-success"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-success"></div>
+                  <div class="table-option-view table-success"></div>
                 </li>
               </ul>
               <!--Четвертый ряд-->
-              <ul class="table-row2-wrapper">
+              <ul class="table-option-wrapper bottom">
                 <li>
-                  <div class="table-row2-view2">
-                    <p class="table-row2-title">Комментарии</p>
+                  <div class="table-option-view view3 right">
+                    <p class="table-option-title">Комментарии</p>
                   </div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-warning"></div>
+                  <div class="table-option-view right table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view table-warning"></div>
+                  <div class="table-option-view right table-warning"></div>
                 </li>
                 <li>
-                  <div class="table-row2-view4 table-success"></div>
+                  <div class="table-option-view view4 table-success"></div>
                 </li>
               </ul>
             </div>

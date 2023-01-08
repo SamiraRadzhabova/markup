@@ -1,0 +1,165 @@
+.gallery {
+  @media screen and (max-width: @large) {
+  }
+  &__container {
+    .container();
+  }
+  &__info {
+    background: @white-dark;
+    width: 300px;
+    height: 155px;
+    @media screen and (max-width: @large) {
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    @media screen and (max-width: @tablet) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  &__user {
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: @grey;
+  }
+  &__time {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @grey;
+  }
+  &__comment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @grey;
+    width: 246px;
+    height: 44px;
+    margin-left: 27px;
+  }
+  &__like {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 28px;
+    gap: 130px;
+  }
+  &__like-count {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @pink;
+    width: 99px;
+  }
+  &__button {
+    background-image: url(/src/img/gallery/heart.svg);
+    border: none;
+    width: 13px;
+    height: 12px;
+    cursor: pointer;
+  }
+  &__item {
+    width: 30%;
+    max-width: 300px;
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 51px;
+    @media screen and (max-width: @tablet) {
+      width: 47%;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: @mobile) {
+      flex-direction: column;
+    }
+  }
+  &__item--main {
+    width: 100%;
+    max-width: 100%;
+    .gallery__img {
+      width: 1200px;
+      @media screen and (max-width: @tablet) {
+        width: 660px;
+        height: 509px;
+      }
+    }
+    .gallery__label {
+      position: absolute;
+      width: 140px;
+      height: 36px;
+      right: 290px;
+      top: 688px;
+      background: @pink;
+      @media screen and (max-width: @tablet) {
+        right: 30px;
+        top: 738px;
+      }
+    }
+    .gallery__panorama {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: @white;
+      margin-top: 6px;
+      margin-left: 20px;
+    }
+    .gallery__info {
+      width: 940px;
+      height: 96px;
+      margin-left: 130px;
+      position: relative;
+      @media screen and (max-width: @tablet) {
+        margin-left: 20px;
+        width: 620px;
+        height: 121px;
+        margin-bottom: 50px;
+      }
+    }
+    .gallery__comment {
+      width: 850px;
+      height: 25px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: @grey;
+      position: absolute;
+      margin-top: -12px;
+      margin-left: 40px;
+      @media screen and (max-width: @tablet) {
+        width: 520px;
+        height: 45px;
+        position: static;
+        margin-top: 0px;
+        margin-left: 25px;
+        text-align: start;
+      }
+    }
+    .gallery__like {
+      position: absolute;
+      margin-top: -27px;
+      margin-left: 790px;
+      gap: 8px;
+      @media screen and (max-width: @tablet) {
+        margin-top: -70px;
+        margin-left: 473px;
+      }
+    }
+  }
+}

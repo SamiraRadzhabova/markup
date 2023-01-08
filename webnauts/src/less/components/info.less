@@ -1,0 +1,39 @@
+.info {
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet()
+    }
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: @grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__info--first {
+    padding-top: 90px;
+    padding-bottom: 87px;
+    @media screen and (max-width: @tablet) {
+      padding-top: 100px;
+    }
+    .info__description {
+      width: 572px;
+      height: 63px;
+    }
+  }
+  &__info--second {
+    padding-top: 7px;
+    padding-bottom: 75px;
+    @media screen and (max-width: @tablet) {
+      padding-top: 53px;
+    }
+    .info__description {
+      width: 422px;
+      height: 56px;
+    }
+  }
+}

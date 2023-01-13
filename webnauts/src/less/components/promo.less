@@ -1,0 +1,45 @@
+.promo {
+  background-image: url(../img/back-desktop.jpg);
+  background-size: cover;
+  background-position: 50%;
+  min-height: 285px;
+  padding-top: 110px;
+  @media screen and (max-width: @tablet) {
+    min-height: 330px;
+  }
+  @media screen and (max-width: @mobile) {
+    min-height: 240px;
+  }
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet();
+    }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
+  }
+  &__title {
+    width: 357px;
+    min-height: 150px;
+    color: @white;
+    margin-left: 422px;
+    margin-top: 58px;
+    .title();
+    @media screen and (max-width: @tablet) {
+      margin-top: 81px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: @mobile) {
+      font-size: 29px;
+      line-height: 33px;
+      width: 272px;
+      min-height: 21px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+    }
+  }
+}

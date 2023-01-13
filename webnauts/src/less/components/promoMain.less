@@ -1,0 +1,192 @@
+.promoMain {
+  background-image: url(../img/back-desktop.jpg);
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 94px;
+  height: 755px;
+  @media screen and (max-width: @tablet) {
+    padding-top: 128px;
+    height: 603px;
+  }
+  @media screen and (max-width: @mobile) {
+    padding-top: 69px;
+    height: 865px;
+  }
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet();
+    }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__title {
+    .title();
+    color: @white;
+    width: 300px;
+    height: 174px;
+    margin-top: 110px;
+    margin-left: 33px;
+    margin-bottom: 68px;
+    @media screen and (max-width: @tablet) {
+      height: 137px;
+      margin-left: 20px;
+      font-size: 40px;
+      line-height: 120%;
+      margin-bottom: 39px;
+      margin-top: 74px;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 280px;
+      height: 67px;
+      font-size: 28px;
+      margin-top: 30px;
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+  }
+  &__br{
+    @media screen and (max-width: @mobile) {
+   display: none;
+    }
+  }
+  &__infoMain{
+    @media screen and (max-width: @mobile) {
+     background-color: @dark-grey;
+     height: 328px;
+     margin-top: 440px;
+    }
+  }
+  &__imageWrapper {
+    flex-grow: 1;
+    min-height: 645px;
+    position: relative;
+    @media screen and (max-width: @tablet) {
+      min-height: 545px;
+      max-width: 660px;
+    }
+    @media screen and (max-width: @mobile) {
+      
+    }
+  }
+  &__image {
+    /* width: 600px; */
+    position: absolute;
+    right: 100px;
+    top: -11px;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__imageTablet{
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 660px;
+      height: 545px;
+      top: -20px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__imageMobile{
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      display: block;
+      position: absolute;
+      right: 33px;
+      width: 470px;
+      height: 386px;
+      top: -170px;
+    }
+  }
+  &__btn {
+    color: white;
+    font-weight: 700;
+    width: 300px;
+    height: 56px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid #ffffff;
+    line-height: 18px;
+    border-radius: 29px;
+    padding: 11px 32px;
+    margin-left: 32px;
+    background-color: transparent;
+    @media screen and (max-width: @tablet) {
+      margin-left: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: 100px;
+      margin-top: 49px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: 43px;
+    @media screen and (max-width: @tablet) {
+      margin-top: 51px;
+      margin-left: 70px;
+      margin-bottom: 38px;
+      position: relative;
+      z-index: 1;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: 140px;
+      margin-top: 32px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &__item {
+    margin-right: 36px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    width: 300px;
+    min-height: 37px;
+    line-height: 24px;
+    margin-bottom: 136px;
+    margin-left: 35px;
+    @media screen and (max-width: @tablet) {
+      margin-top: 0px;
+      margin-left: 20px;
+      margin-bottom: 119px;
+      position: relative;
+      z-index: 1;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: 100px;
+      min-height: 47px;
+      margin-bottom: 0px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

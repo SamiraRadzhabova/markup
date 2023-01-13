@@ -4,6 +4,9 @@
     @media screen and (max-width: @tablet) {
       .containerTablet();
     }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
   }
   &__wrapper {
     display: flex;
@@ -17,6 +20,12 @@
       height: 511px;
       margin-left: 0px;
     }
+    @media screen and (max-width: @mobile) {
+      flex-direction: column;
+      width: 500px;
+      height: 800px;
+      align-items: center;
+    }
   }
   &__picture {
     width: 300px;
@@ -28,19 +37,34 @@
       height: 400px;
       margin-left: 20px;
     }
+    @media screen and (max-width: @mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
   }
   &__rightBlock {
     margin-left: 90px;
     margin-top: 52px;
     @media screen and (max-width: @tablet) {
-      margin-left: 48px;
+      margin-left: 40px;
       margin-top: 66px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-top: 42px;
     }
   }
   &__list {
     display: flex;
     flex-direction: column;
     text-align: center;
+    @media screen and (max-width: @mobile) {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 60px;
+    }
   }
   &__item {
     display: flex;
@@ -48,23 +72,63 @@
     @media screen and (max-width: @tablet) {
       margin-bottom: 24px;
     }
+    @media screen and (max-width: @mobile) {
+      flex-direction: row;
+      margin-bottom: 0px;
+      margin-right: 35px;
+      width: 50px;
+    }
   }
   &__icon--crop {
     @media screen and (max-width: @tablet) {
       width: 22px;
       height: 22px;
     }
+    @media screen and (max-width: @mobile) {
+      width: 44px;
+      height: 44px;
+    }
   }
   &__icon--fill {
     @media screen and (max-width: @tablet) {
       width: 24px;
       height: 22px;
+      display: block;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__icon--fillGrey {
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      display: block;
+      width: 48px;
+      height: 43px;
     }
   }
   &__icon--contrast {
     @media screen and (max-width: @tablet) {
       width: 16px;
       height: 16px;
+      display: block;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__icon--contrastGrey {
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 32px;
+      height: 32px;
+      display: block;
     }
   }
   &__line {
@@ -78,6 +142,18 @@
       width: 202px;
       margin-left: 29px;
       margin-top: 10px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__line--mobile {
+    @media screen and (max-width: @mobile) {
+      display: block;
+      width: 240px;
+      margin-top: 80px;
+      position: absolute;
+      left: 100px;
     }
   }
   &__round {
@@ -93,6 +169,16 @@
     @media screen and (max-width: @tablet) {
       margin-left: 100px;
       margin-top: 4px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__round--mobile{
+    @media screen and (max-width: @mobile) {
+      display: block;
+      margin-left: 170px;
+      margin-top: 75px;
     }
   }
   &__hr {
@@ -111,9 +197,20 @@
       margin-bottom: 24px;
       border: 0px;
     }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
   }
-  &__hr--none{
+  &__hr--none {
     display: none;
+    @media screen and (max-width: @mobile) {
+      display: block;
+      position: absolute;
+      width: 500px;
+      left: 0px;
+      margin-top: 200px;
+      margin-bottom: 0px;
+    }
   }
   &__buttonBlock {
     margin-top: 165px;
@@ -122,6 +219,11 @@
       flex-direction: column;
       gap: 24px;
       margin-top: 34px;
+    }
+    @media screen and (max-width: @mobile) {
+      gap: 12px;
+      margin-top: 120px;
+      margin-left: 20px;
     }
   }
   &__button {
@@ -137,6 +239,10 @@
     @media screen and (max-width: @tablet) {
       width: 260px;
       margin-right: 40px;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 280px;
+      margin-right: 0px;
     }
   }
   &__button--post {

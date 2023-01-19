@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -235,14 +237,15 @@
       <section class="comment">
         <div class="comment__container">
           <img src="img/quotes.png" class="comment__quote" alt="" />
-          <div class="comment__button">
+          <!-- <div class="comment__button">
             <button class="comment__btn comment__btn--prev">
               <img src="img/left arrow.png" alt="prev" class="comment__img">
             </button>
             <button type="image" class="comment__btn comment__btn--next">
               <img src="img/right arrow.png" alt="next" class="comment__img">
             </button>
-          </div>
+          </div> -->
+          <div class="comment__slick">
             <div class="comment__wrapper comment__wrapper--comment1 comment__wrapper--active" data-id="0" id="0">
               <p class="comment__story">
                 «Это приложение перевернуло мой мир и позволило по-новому
@@ -270,12 +273,13 @@
               <h3 class="comment__title">Tyuoh Петров</h3>
               <p class="comment__info">35 лет, водитель трамвая</p>
             </div>
-            <div class="comment__buttonTablet">
+          </div>
+            <!-- <div class="comment__buttonTablet">
               <span class="comment__dot" onclick="currentSlide(1)"></span> 
               <span class="comment__dot" onclick="currentSlide(2)"></span> 
               <span class="comment__dot" onclick="currentSlide(3)"></span> 
             </div>
-          </div>
+          </div> -->
       </section>
       <section class="table">
         <div class="table__container">
@@ -519,34 +523,8 @@
         </div>
       </div>
     </footer>
+    <script src="libs/jquery.js"></script>
+    <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.js"></script>
     <script src="script.js"></script>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("comment__wrapper");
-        var dots = document.getElementsByClassName("comment__dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" comment__active", "");
-        }
-        slides[slideIndex-1].style.display = "block"; 
-        dots[slideIndex-1].className += " comment__active";
-      }
-      </script>
   </body>
 </html>

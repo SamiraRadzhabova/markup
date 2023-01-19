@@ -78,6 +78,15 @@ p {
     margin-left: 335px;
   }
 }
+.header__listToggle--open .header__itemLine--line1 {
+  transform: rotate(45deg);
+}
+.header__listToggle--open .header__itemLine--line2 {
+  display: none;
+}
+.header__listToggle--open .header__itemLine--line3 {
+  transform: rotate(-45deg);
+}
 @media (max-width: 660px) {
   .header__itemLine {
     width: 50px;
@@ -109,6 +118,7 @@ p {
 }
 @media (max-width: 660px) {
   .nav__list {
+    flex-direction: column;
     display: none;
   }
 }

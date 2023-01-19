@@ -49,6 +49,17 @@
       margin-left: 335px;
     }
   }
+  &__listToggle--open{
+    .header__itemLine--line1{
+      transform: rotate(45deg);
+    }
+    .header__itemLine--line2{
+      display: none;
+    }
+    .header__itemLine--line3{
+      transform: rotate(-45deg);
+    }
+  }
   &__itemLine {
     @media (max-width: @tablet) {
       width: 50px;

@@ -9,61 +9,86 @@
     }
   }
   &__wrapper {
-    display: flex;
     background: @white-dark;
-    width: 940px;
+    max-width: 940px;
     height: 514px;
-    margin-left: 130px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 17px;
     @media screen and (max-width: @tablet) {
-      width: 660px;
+      max-width: 660px;
       height: 511px;
       margin-left: 0px;
     }
     @media screen and (max-width: @mobile) {
       flex-direction: column;
-      width: 500px;
+      max-width: 500px;
       height: 800px;
       align-items: center;
     }
   }
+  &__wrapperMain{
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: @tablet) {
+      max-width: 620px;
+    }
+    @media screen and (max-width: @mobile) {
+      flex-direction: column;
+    }
+    
+  }
   &__picture {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
     margin-top: 57px;
-    margin-left: 80px;
+    margin-left: 20px;
     @media screen and (max-width: @tablet) {
-      width: 300px;
-      height: 400px;
-      margin-left: 20px;
+      margin-left: 0px;
     }
     @media screen and (max-width: @mobile) {
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
+      width: 100%;
     }
   }
   &__rightBlock {
-    margin-left: 90px;
+    // margin-left: 90px;
     margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    width: 100%;
     @media screen and (max-width: @tablet) {
-      margin-left: 40px;
+      margin-left: 0px;
       margin-top: 66px;
+      max-width: 275px;
     }
     @media screen and (max-width: @mobile) {
-      margin-left: 90px;
-      margin-right: 90px;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 42px;
+      max-width: 300px;
     }
   }
   &__list {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 455px;
+    @media screen and (max-width: @tablet) {
+      max-width: 275px;
+    }
     @media screen and (max-width: @mobile) {
       flex-direction: row;
       align-items: center;
-      margin-left: 60px;
+      justify-content: space-around;
+      margin-left: 0px;
+      max-width: 300px;
     }
   }
   &__item {
@@ -75,7 +100,7 @@
     @media screen and (max-width: @mobile) {
       flex-direction: row;
       margin-bottom: 0px;
-      margin-right: 35px;
+      // margin-right: 35px;
       width: 50px;
     }
   }
@@ -132,14 +157,15 @@
     }
   }
   &__line {
-    width: 288px;
+    max-width: 288px;
+    width: 100%;
     height: 2px;
     background: @grey;
     margin-left: 48px;
     margin-top: 19px;
     position: relative;
     @media screen and (max-width: @tablet) {
-      width: 202px;
+      max-width: 202px;
       margin-left: 29px;
       margin-top: 10px;
     }
@@ -150,10 +176,13 @@
   &__line--mobile {
     @media screen and (max-width: @mobile) {
       display: block;
-      width: 240px;
+      max-width: 240px;
+      width: 100%;
       margin-top: 80px;
       position: absolute;
-      left: 100px;
+      left: auto;
+      right: auto;
+      margin-left: 0px;
     }
   }
   &__round {
@@ -177,12 +206,13 @@
   &__round--mobile{
     @media screen and (max-width: @mobile) {
       display: block;
-      margin-left: 170px;
+      margin-left: 70px;
       margin-top: 75px;
     }
   }
   &__hr {
-    width: 410px;
+    max-width: 410px;
+    width: 100%;
     height: 1px;
     background: @grey;
     opacity: 0.1;
@@ -190,7 +220,7 @@
     margin-bottom: 15px;
     margin-left: 0px;
     @media screen and (max-width: @tablet) {
-      width: 275px;
+      max-width: 275px;
       height: 1px;
       background: @grey;
       opacity: 0.1;
@@ -206,19 +236,23 @@
     @media screen and (max-width: @mobile) {
       display: block;
       position: absolute;
-      width: 500px;
-      left: 0px;
+      max-width: 300px;
+      width: 100%;
       margin-top: 200px;
       margin-bottom: 0px;
     }
   }
   &__buttonBlock {
+    max-width: 410px;
+    display: flex;
     margin-top: 165px;
+    justify-content: space-between;
     @media screen and (max-width: @tablet) {
       display: flex;
       flex-direction: column;
       gap: 24px;
       margin-top: 34px;
+      max-width: 275px;
     }
     @media screen and (max-width: @mobile) {
       gap: 12px;
@@ -227,22 +261,21 @@
     }
   }
   &__button {
-    width: 183px;
+    max-width: 183px;
+    width: 100%;
     height: 55px;
     border-radius: 30px;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     text-align: center;
-    margin-right: 40px;
+    // margin-right: 40px;
     cursor: pointer;
     @media screen and (max-width: @tablet) {
-      width: 260px;
-      margin-right: 40px;
+      max-width: 260px;
     }
     @media screen and (max-width: @mobile) {
-      width: 280px;
-      margin-right: 0px;
+      max-width: 280px;
     }
   }
   &__button--post {
@@ -255,3 +288,4 @@
     opacity: 0.1;
   }
 }
+

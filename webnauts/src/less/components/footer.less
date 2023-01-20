@@ -9,9 +9,12 @@
     }
   }
   &__wrapper {
-    display: flex;
-    align-items: center;
     height: 197px;
+    display: block;
+    max-width: 1180px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: @tablet) {
       height: 127px;
     }
@@ -20,54 +23,46 @@
       flex-direction: column;
     }
   }
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (max-width: @mobile) {
+      height: 284px;
+      flex-direction: column;
+    }
+  }
+  &__item{
+    margin-top: 74px;
+    @media screen and (max-width: @tablet) {
+      margin-top: 29px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-top: 0px;
+    }
+  }
+  &__wrapperSites{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   &__dev{
     display: flex;
     align-items: center;
-    @media screen and (max-width: @mobile) {
-      margin-top: 23px;
-      margin-bottom: 40px;
-    }
-  }
-  &__sites {
-    display: flex;
-    margin-left: 238px;
-    margin-top: 20px;
-    @media screen and (max-width: @tablet) {
-      margin-left: 79px;
-      margin-top: 15px;
-    }
-    @media screen and (max-width: @mobile) {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 41px;
-    }
-    .sites__item {
-      margin-right: 5px;
-    }
   }
   &__logo {
     margin-top: 90px;
     margin-bottom: 87px;
-    margin-left: 130px;
-    @media screen and (max-width: @tablet) {
-      margin-left: 20px;
-      margin-top: 85px;
-    }
-    @media screen and (max-width: @mobile) {
-      margin-left: 0px;
-      margin-bottom: 0px;
-      margin-top: 40px;
-    }
+  }
+  &__imgSites{
+    margin-top: 10px;
   }
   &__label {
-    margin-left: 225px;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
-    margin-top: 15px;
     color: @grey;
     @media screen and (max-width: @tablet) {
-      margin-left: 55px;
       margin-top: 10px;
     }
     @media screen and (max-width: @mobile) {
@@ -79,9 +74,12 @@
     width: 27px;
     height: 34px;
     margin-left: 13px;
-    margin-top: 25px;
+    margin-top: 10px;
     @media screen and (max-width: @tablet) {
       margin-top: 15px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-top: 5px;
     }
   }
 }

@@ -31,11 +31,12 @@
       padding-bottom: 60px;
     }
     .info__description {
-      width: 572px;
-      height: 63px;
+      max-width: 572px;
+      width: 100%;
+      min-height: 63px;
       @media screen and (max-width: @mobile) {
-        width: 280px;
-        height: 90px;
+        max-width: 280px;
+        min-height: 90px;
       }
     }
   }
@@ -50,12 +51,14 @@
       padding-bottom: 52px;
     }
     .info__description {
-      width: 422px;
-      height: 56px;
+      max-width: 422px;
+      width: 100%;
+      min-height: 56px;
       @media screen and (max-width: @mobile) {
-        width: 280px;
-        height: 81px;
+        max-width: 280px;
+        min-height: 81px;
       }
     }
   }
 }
+

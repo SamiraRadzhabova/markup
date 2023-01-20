@@ -12,11 +12,11 @@
   }
   &__info {
     background: @white-dark;
-    width: 300px;
-    height: 155px;
+    max-width: 940px;
+    min-height: 155px;
     @media screen and (max-width: @mobile) {
-      width: 380px;
-        height: 162px;
+      max-width: 380px;
+      min-height: 162px;
     }
   }
   &__img {
@@ -24,17 +24,16 @@
     width: 100%;
     object-fit: cover;
     @media screen and (max-width: @tablet) {
-      width: 300px;
+      max-width: 300px;
       height: 300px;
     }
     @media screen and (max-width: @mobile) {
-      width: 380px;
+      max-width: 380px;
       height: 220px;
     }
   }
   &__user {
     padding-top: 25px;
-    padding-left: 27px;
   }
   &__name {
     font-weight: 700;
@@ -55,16 +54,25 @@
     font-size: 14px;
     line-height: 24px;
     color: @grey;
-    width: 246px;
-    height: 44px;
-    margin-left: 27px;
+    max-width: 246px;
+    min-height: 44px;
   }
   &__like {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 28px;
-    gap: 130px;
+    // margin-left: 28px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    // gap: 130px;
+  }
+  &__block{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   &__like-count {
     font-weight: 400;
@@ -99,8 +107,9 @@
       margin-bottom: 20px;
     }
     @media screen and (max-width: @mobile) {
-      margin-left: 60px;
-      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
   }
   &__list {
@@ -117,14 +126,49 @@
     @media screen and (max-width: @tablet) {
       margin: 0px;
     }
-    .gallery__img {
-      width: 1200px;
+    .gallery__wrapperInfo{
+      max-width: 940px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       @media screen and (max-width: @tablet) {
-        width: 660px;
+        max-width: 590px;
+      }
+      @media screen and (max-width: @mobile) {
+        max-width:340px;
+      }
+    }
+    .gallery__block{
+      max-width: 880px;
+      @media screen and (max-width: @tablet) {
+        max-width: 540px;
+      }
+      @media screen and (max-width: @mobile) {
+        display: flex;
+        flex-direction: column;
+        max-width: 310px;
+      }
+    }
+    .gallery__blockMain{
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: @tablet) {
+        max-width: 590px;
+      }
+      @media screen and (max-width: @mobile) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+    .gallery__img {
+      max-width: 1200px;
+      @media screen and (max-width: @tablet) {
+        max-width: 660px;
+        width: 100%;
         height: 509px;
       }
       @media screen and (max-width: @mobile) {
-        width: 500px;
+        max-width: 500px;
         height: 237px;
       }
     }
@@ -132,7 +176,7 @@
       position: absolute;
       width: 140px;
       height: 36px;
-      right: 290px;
+      right: 220px;
       top: 688px;
       background: @pink;
       @media screen and (max-width: @tablet) {
@@ -152,25 +196,23 @@
       margin-left: 20px;
     }
     .gallery__info {
-      width: 940px;
-      height: 96px;
-      margin-left: 130px;
+      max-width: 940px;
+      min-height: 96px;
+      // margin-left: 130px;
       position: relative;
       @media screen and (max-width: @tablet) {
-        margin-left: 20px;
-        width: 620px;
+        max-width: 620px;
         height: 121px;
         margin-bottom: 50px;
       }
       @media screen and (max-width: @mobile) {
-        width: 380px;
+        max-width: 380px;
         height: 192px;
-        margin-left: 60px;
       }
     }
     .gallery__comment {
-      width: 850px;
-      height: 25px;
+      max-width: 850px;
+      min-height: 25px;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -178,34 +220,25 @@
       color: @grey;
       position: absolute;
       margin-top: -12px;
-      margin-left: 40px;
       @media screen and (max-width: @tablet) {
-        width: 520px;
-        height: 45px;
+        max-width: 520px;
+        min-height: 45px;
         position: static;
         margin-top: 0px;
-        margin-left: 25px;
         text-align: start;
       }
       @media screen and (max-width: @mobile) {
-        width: 340px;
-        height: 83px;
+        max-width: 340px;
+        min-height: 83px;
         margin-top: 14px;
       }
     }
     .gallery__like {
-      position: absolute;
-      margin-top: -27px;
-      margin-left: 790px;
-      gap: 8px;
-      @media screen and (max-width: @tablet) {
-        margin-top: -70px;
-        margin-left: 473px;
-      }
+      margin-left: 0px;
+      margin-right: 0px;
       @media screen and (max-width: @mobile) {
-        position: static;
-        margin-left: 25px;
-        margin-top: 0px;
+        position: absolute;
+        bottom: 20px;
       }
     }
     }

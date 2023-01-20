@@ -1,0 +1,291 @@
+.editing {
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet();
+    }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
+  }
+  &__wrapper {
+    background: @white-dark;
+    max-width: 940px;
+    height: 514px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+    @media screen and (max-width: @tablet) {
+      max-width: 660px;
+      height: 511px;
+      margin-left: 0px;
+    }
+    @media screen and (max-width: @mobile) {
+      flex-direction: column;
+      max-width: 500px;
+      height: 800px;
+      align-items: center;
+    }
+  }
+  &__wrapperMain{
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: @tablet) {
+      max-width: 620px;
+    }
+    @media screen and (max-width: @mobile) {
+      flex-direction: column;
+    }
+    
+  }
+  &__picture {
+    max-width: 300px;
+    height: 400px;
+    margin-top: 57px;
+    margin-left: 20px;
+    @media screen and (max-width: @tablet) {
+      margin-left: 0px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  &__rightBlock {
+    // margin-left: 90px;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    width: 100%;
+    @media screen and (max-width: @tablet) {
+      margin-left: 0px;
+      margin-top: 66px;
+      max-width: 275px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 42px;
+      max-width: 300px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 455px;
+    @media screen and (max-width: @tablet) {
+      max-width: 275px;
+    }
+    @media screen and (max-width: @mobile) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 0px;
+      max-width: 300px;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 5px;
+    @media screen and (max-width: @tablet) {
+      margin-bottom: 24px;
+    }
+    @media screen and (max-width: @mobile) {
+      flex-direction: row;
+      margin-bottom: 0px;
+      // margin-right: 35px;
+      width: 50px;
+    }
+  }
+  &__icon--crop {
+    @media screen and (max-width: @tablet) {
+      width: 22px;
+      height: 22px;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  &__icon--fill {
+    @media screen and (max-width: @tablet) {
+      width: 24px;
+      height: 22px;
+      display: block;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__icon--fillGrey {
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      display: block;
+      width: 48px;
+      height: 43px;
+    }
+  }
+  &__icon--contrast {
+    @media screen and (max-width: @tablet) {
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__icon--contrastGrey {
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+  }
+  &__line {
+    max-width: 288px;
+    width: 100%;
+    height: 2px;
+    background: @grey;
+    margin-left: 48px;
+    margin-top: 19px;
+    position: relative;
+    @media screen and (max-width: @tablet) {
+      max-width: 202px;
+      margin-left: 29px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__line--mobile {
+    @media screen and (max-width: @mobile) {
+      display: block;
+      max-width: 240px;
+      width: 100%;
+      margin-top: 80px;
+      position: absolute;
+      left: auto;
+      right: auto;
+      margin-left: 0px;
+    }
+  }
+  &__round {
+    box-sizing: border-box;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: @white;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top: 13px;
+    @media screen and (max-width: @tablet) {
+      margin-left: 100px;
+      margin-top: 4px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__round--mobile{
+    @media screen and (max-width: @mobile) {
+      display: block;
+      margin-left: 70px;
+      margin-top: 75px;
+    }
+  }
+  &__hr {
+    max-width: 410px;
+    width: 100%;
+    height: 1px;
+    background: @grey;
+    opacity: 0.1;
+    border: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    @media screen and (max-width: @tablet) {
+      max-width: 275px;
+      height: 1px;
+      background: @grey;
+      opacity: 0.1;
+      margin-bottom: 24px;
+      border: 0px;
+    }
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__hr--none {
+    display: none;
+    @media screen and (max-width: @mobile) {
+      display: block;
+      position: absolute;
+      max-width: 300px;
+      width: 100%;
+      margin-top: 200px;
+      margin-bottom: 0px;
+    }
+  }
+  &__buttonBlock {
+    max-width: 410px;
+    display: flex;
+    margin-top: 165px;
+    justify-content: space-between;
+    @media screen and (max-width: @tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 34px;
+      max-width: 275px;
+    }
+    @media screen and (max-width: @mobile) {
+      gap: 12px;
+      margin-top: 120px;
+      margin-left: 20px;
+    }
+  }
+  &__button {
+    max-width: 183px;
+    width: 100%;
+    height: 55px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    // margin-right: 40px;
+    cursor: pointer;
+    @media screen and (max-width: @tablet) {
+      max-width: 260px;
+    }
+    @media screen and (max-width: @mobile) {
+      max-width: 280px;
+    }
+  }
+  &__button--post {
+    border: 3px solid @pink;
+    color: @pink;
+  }
+  &__button--cancel {
+    border: 3px solid @grey;
+    color: @grey;
+    opacity: 0.1;
+  }
+}
+

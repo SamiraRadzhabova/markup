@@ -1,0 +1,275 @@
+.table {
+  padding-top: 38px;
+  background-image: url(../img/background.png);
+  background-size: 100% 950px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @media screen and (max-width: @tablet) {
+    background-size: 100% 420px;
+    background-position: 0 0px;
+  }
+  @media screen and (max-width: @mobile) {
+    background-image: url(../img/tableBackground.png);
+    padding-top: 280px;
+    background-size: 100% 620px;
+    background-position: 0 210px;
+  }
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet();
+    }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+  }
+  &__all {
+    margin-bottom: 98px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 944px;
+    width: 100%;
+    margin-top: 120px;
+    @media screen and (max-width: @tablet) {
+      max-width: 620px;
+      margin-bottom: 70px;
+      margin-top: 80px;
+    }
+    @media screen and (max-width: @mobile) {
+      margin-top: 70px;
+      max-width: 300px;
+    }
+  }
+  &__wrapperColumn{
+    display: flex;
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+  }
+  &__listFirst{
+    display: flex;
+    flex-direction: column;
+    max-width: 234px;
+    width: 100%;
+    @media screen and (max-width: @tablet) {
+      max-width: 152px;
+    }
+  }
+  &__listSecond{
+    display: flex;
+    flex-direction: column;
+    max-width: 234px;
+    width: 100%;
+    border-bottom: 2px solid @white-light;
+    border-right: 2px solid @white-light;
+    @media screen and (max-width: @tablet) {
+      max-width: 152px;
+    }
+  }  &__listThird{
+    display: flex;
+    flex-direction: column;
+    max-width: 234px;
+    width: 100%;
+    border-bottom: 2px solid @white-light;
+    border-right: 2px solid @white-light;
+    @media screen and (max-width: @tablet) {
+      max-width: 152px;
+    }
+  }  &__listFour{
+    display: flex;
+    flex-direction: column;
+    max-width: 234px;
+    width: 100%;
+    border-bottom: 2px solid @white-light;
+    border-right: 2px solid @white-light;
+    @media screen and (max-width: @tablet) {
+      max-width: 152px;
+    }
+  }
+  &__header {
+    background: @grey;
+    border: 2px solid @grey;
+    min-height: 94px;
+    @media screen and (max-width: @tablet) {
+      max-width: 150px;
+      min-height: 75px;
+      margin-top: 0px;
+    }
+    @media screen and (max-width: @mobile) {
+      max-width: 300px;
+      height: 77px;
+      margin-top: 0px;
+    }
+  }
+  &__header--view0{
+    background-color: transparent;
+    border: 2px solid rgb(241, 241, 241);
+  }
+  &__svg {
+    position: absolute;
+    margin-top: -15px;
+    @media screen and (max-width: @tablet) {
+      width: 61px;
+      height: 61px;
+      margin-top: -10px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 14px;
+    color: @white;
+    text-align: center;
+    @media screen and (max-width: @tablet) {
+      font-size: 16px;
+      margin-top: 9px;
+    }
+  }
+  &__price {
+    min-height: 18px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: @white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: @tablet) {
+      font-size: 18px;
+    }
+  }
+  &__option {
+    height: 59px;
+    background: @white;
+    @media screen and (max-width: @tablet) {
+      height: 45px;
+    }
+  }
+  &__option--view1 {
+    border-radius: 1px 0px 0px 0px;
+    border-top: 2px solid @white-light;
+    border-radius: 1px 0px 0px 0px;
+  }
+  &__option--view1, &__option--view2, &__option--view3 {
+    border-bottom: 2px solid @white-light;
+    border-left: 2px solid @white-light;
+    border-right: 2px solid @white-light;
+  }
+  &__option--view3{
+    border-radius: 0px 0px 0px 1px;
+  }
+  &__option--view4, &__option--view5 {
+    border-top: 2px solid @white-light;
+  }
+  &__option--view5{
+    border-radius: 0px 0px 1px 0px;
+  }
+  &__header--view1{
+    border-radius: 1px 0px 0px 0px;
+  }
+  &__header--view2{
+    border-radius: 0px 1px 0px 0px;
+  }
+  &__listOption--bottom {
+    border-bottom: 2px solid @white-light;
+  }
+  &__option--success {
+    position: relative;
+  }
+  &__option--success::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    background-image: url(../img/success.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    @media screen and (max-width: @tablet) {
+      width:31px;
+      height: 21px;
+      margin-left: -15px;
+      margin-top: -12px;
+    }
+  }
+  &__option--warning {
+    background-image: url(../img/warning.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    @media screen and (max-width: @tablet) {
+      background-size: 27px 27px;
+    }
+  }
+  &__label {
+    .infoText();
+    margin-top: 12px;
+    margin-left: 21px;
+    margin-right: 65px;
+    color: @grey;
+    position: absolute;
+    max-width: 147px;
+    margin: 0px;
+    min-height: 30px;
+    @media screen and (max-width: @tablet) {
+      font-size: 14px;
+      margin-top: 8px;
+      margin-left: 15px;
+    }
+    @media screen and (max-width: @mobile) {
+      width: 115px;
+      position: static;
+      margin-left: 0px;
+    }
+  }
+  // Mobile
+  &__slick{
+    display: none;
+    @media screen and (max-width: @tablet) {
+     display: none;
+    }
+    @media screen and (max-width: @mobile) {
+      display: block;
+    }
+  }
+  &__version1 {
+    @media screen and (max-width: @mobile) {
+      position: relative;
+      margin-left: auto;
+      margin-top: auto;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  &__version2 {
+    @media screen and (max-width: @mobile) {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  &__version3 {
+    @media screen and (max-width: @mobile) {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .slick-dots{
+    bottom: -55px;
+  }
+  &__optionWrapper{
+    @media screen and (max-width: @mobile) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}

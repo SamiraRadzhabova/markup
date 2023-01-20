@@ -1,0 +1,123 @@
+.contentTime {
+  padding-top: 30px;
+  background-color: @white-dark;
+  height: 100%;
+  @media screen and (max-width: @tablet) {
+    padding-top: 0px;
+    background-color: @white;
+    margin-top: -30px;
+    min-height: 340px;
+    max-width: 660px;
+    width: 100%;
+    position: absolute;
+  }
+  @media screen and (max-width: @mobile) {
+    display: none;
+  }
+  &__container {
+    .container();
+    @media screen and (max-width: @tablet) {
+      .containerTablet();
+    }
+    @media screen and (max-width: @mobile) {
+      .containerMobile();
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__imageBlock{
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 67px;
+    // margin-left: 20px;
+    @media screen and (max-width: @tablet) {
+      margin-bottom: 0px;
+      max-width: 278px;
+    }
+  }
+  &__img {
+    max-width: 298px;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    // margin-left: 137px;
+    // margin-bottom: 67px;
+    @media screen and (max-width: @tablet) {
+      max-width: 238px;
+      height: 276px;
+      margin-top: 54px;
+    }
+  }
+  &__info {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    // z-index: 1;
+    // left: -50px;
+    // margin-left: 68px;
+    margin-left: -30px;
+    @media screen and (max-width: @tablet) {
+      margin-top: 90px;
+      margin-left: 50px;
+    }
+  }
+  &__br{
+    display: block;
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+  }
+  &__br1{
+    display: none;
+    @media screen and (max-width: @tablet) {
+      display: block;
+    }
+  }
+  &__title {
+    max-width: 298px;
+    width: 100%;
+    min-height: 23px;
+    .titleSection();
+    text-align: center;
+    @media screen and (max-width: @tablet) {
+      max-width: 168px;
+      min-height: 69px;
+      line-height: 36px;
+      text-align: start;
+    }
+  }
+  &__text {
+    color: @grey;
+    .infoText();
+    max-width: 534px;
+    width: 100%;
+    min-height: 84px;
+    margin-top: 29px;
+    margin-bottom: 32px;
+    @media screen and (max-width: @tablet) {
+      max-width: 305px;
+      min-height: 90px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  &__link {
+    max-width: 290px;
+    width: 100%;
+    min-height: 13px;
+    color: @pink;
+    .infoText();
+    @media screen and (max-width: @tablet) {
+      max-width: 226px;
+      min-height: 10px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

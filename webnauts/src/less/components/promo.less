@@ -41,4 +41,27 @@
       margin-top: 40px;
     }
   }
+  &__titleForm{
+    max-width: 747px;
+    width: 100%;
+    min-height: 150px;
+    color: @white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 58px;
+    .title();
+    @media screen and (max-width: @tablet) {
+      max-width: 620px;
+      margin-top: 81px;
+    }
+    @media screen and (max-width: @mobile) {
+      max-width: 300px;
+      font-size: 31px;
+      line-height: 47px;
+      min-height: 100px;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
 }

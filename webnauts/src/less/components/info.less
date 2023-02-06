@@ -60,5 +60,38 @@
       }
     }
   }
+  &__info--third {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    @media screen and (max-width: @tablet) {
+      padding-top: 71px;
+    }
+    @media screen and (max-width: @mobile) {
+      padding-top: 54px;
+      padding-bottom: 52px;
+    }
+    .info__br{
+      display: none;
+      @media screen and (max-width: @tablet) {
+        display: block;
+      }
+      @media screen and (max-width: @tablet) {
+        display: none;
+      }
+    }
+    .info__description {
+      max-width: 756px;
+      width: 100%;
+      min-height: 56px;
+      @media screen and (max-width: @tablet) {
+        max-width: 490px;
+        min-height: 102px;
+      }
+      @media screen and (max-width: @mobile) {
+        max-width: 430px;
+        min-height: 81px;
+      }
+    }
+  }
 }
 
